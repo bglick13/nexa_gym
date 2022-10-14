@@ -5,7 +5,7 @@ As provded, the script executes a small sample Nexa script. It can be modified t
 
 The main contribution is translating the Script Machine API to an API conducive to Reinforcement Learning. We accomplish this by:
 
-- Defining a list of valid actions as the set of OP_CODDE instructions, as well as abstractions for inputs such as PUBLIC_KEY, BIG_INT, SMALL_NUM
+- Defining a list of valid actions as the set of OP_CODE instructions, as well as abstractions for inputs such as PUBLIC_KEY, BIG_INT, SMALL_NUM
 - Execute the ScriptMachine 1 instruction at a time, observing state and calculating reward at each step
 - Define a state space as the ScriptMachine stack, node information, and additional profiler metrics related to code coverage
 - Define a reward function by identifying crashes in ScriptMachine execution
